@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import timediff from 'timediff'
 import pluralize from 'pluralize'
 import andiImageUrl from '../assets/andi.jpg'
@@ -20,11 +19,11 @@ const Age = () => {
 }
 
 const IndexPage = () => (
-  <div>
+  <div style={{ margin: 'auto', width: '100%', textAlign: 'center' }}>
     <img
       src={andiImageUrl}
-      width='60%'
-      height='60%'
+      // width='80%'
+      // height='80%'
     />
     <Age />
     <Birthday />
