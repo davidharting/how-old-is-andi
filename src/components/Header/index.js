@@ -15,16 +15,8 @@ const Header = () => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          How old is Andi?
-        </Link>
+      <h1 style={{ margin: 0, color: 'white' }}>
+        How old is Andi?
       </h1>
     </div>
   </div>
