@@ -2,12 +2,14 @@ import React from 'react'
 import Link from 'gatsby-link'
 import andiImageUrl from '../assets/andi.jpg'
 
+const Birthday = () => (
+  <p>Andi was born on December 25, 2017</p>
+)
+
 const IndexPage = () => (
   <div>
     <img src={andiImageUrl} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <Birthday />
   </div>
 )
 
