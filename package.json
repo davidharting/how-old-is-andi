@@ -7,9 +7,9 @@
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.6",
+    "moment": "^2.21.0",
     "pluralize": "^7.0.0",
-    "react-helmet": "^5.2.0",
-    "timediff": "^1.1.1"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby"

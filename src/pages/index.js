@@ -1,14 +1,20 @@
 import React from 'react'
-import timediff from 'timediff'
 import pluralize from 'pluralize'
+import moment from 'moment'
 import andiImageUrl from '../assets/andi.jpg'
+import timediff from '../helpers/timediff'
 
 const Birthday = () => (
   <p>Andi was born on December 25, 2017</p>
 )
 
 const Age = () => {
-  const age = timediff(new Date(2017, 12, 25), new Date())
+  const today = new Date()
+  // I'm not sure if this todayMoment thing is necessary
+  // But I want a "whole" date without timestamp
+  // To make sure the math is simple
+  const todayMoment = moment(`${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`)
+  const age = timediff(moment('2017-12-25'), todayMoment)
   return (
     <h1>
       {age.months} {pluralize('month', age.months)},&nbsp;
@@ -22,8 +28,6 @@ const IndexPage = () => (
   <div style={{ margin: 'auto', width: '100%', textAlign: 'center' }}>
     <img
       src={andiImageUrl}
-      // width='80%'
-      // height='80%'
     />
     <Age />
     <Birthday />
