@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          How old is Andi?
         </Link>
       </h1>
     </div>
