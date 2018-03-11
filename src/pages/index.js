@@ -9,12 +9,7 @@ const Birthday = () => (
 )
 
 const Age = () => {
-  const today = new Date()
-  // I'm not sure if this todayMoment thing is necessary
-  // But I want a "whole" date without timestamp
-  // To make sure the math is simple
-  const todayMoment = moment(`${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`)
-  const age = timediff(moment('2017-12-25'), todayMoment)
+  const age = timediff(moment('20171225'), moment(new Date()))
   return (
     <h1>
       {age.months} {pluralize('month', age.months)},&nbsp;
