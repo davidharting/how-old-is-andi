@@ -21,7 +21,11 @@ const Age = () => {
 
 const IndexPage = () => (
   <div>
-    <img src={andiImageUrl} />
+    <img
+      src={andiImageUrl}
+      width='60%'
+      height='60%'
+    />
     <Age />
     <Birthday />
   </div>
