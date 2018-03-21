@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * @param {Object} start - a moment object
  * @param {*} end - a moment object
  * @return {Object} contains number of years, months, weeks, and days between
@@ -25,6 +25,6 @@ export default function timediff(start, end) {
     years,
     months,
     weeks,
-    days
+    days,
   }
 }

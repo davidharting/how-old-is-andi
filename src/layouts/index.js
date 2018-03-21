@@ -10,7 +10,10 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="How old is Andi?"
       meta={[
-        { name: 'description', content: 'A site to determine how old Andi is.' },
+        {
+          name: 'description',
+          content: 'A site to determine how old Andi is.',
+        },
         { name: 'keywords', content: 'dog, puppy, pet' },
       ]}
     />
